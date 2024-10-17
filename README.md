@@ -1,2 +1,1 @@
-# Safert-Base-para-Bot-de-Discord
-Safert: Base para Bot de Discord - Modular 
+# Safert: Base Modular para Bot de Discord
