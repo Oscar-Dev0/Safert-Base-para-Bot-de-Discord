@@ -1,0 +1,42 @@
+{
+  "name": "seyfert-bot-base-modular-discord",
+  "version": "0.0.1-test",
+  "description": "Discord bot con seyfert",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "build:start": "tsc && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oscar-Dev0/seyfert-Bot-Base-Modular-Discord.git"
+  },
+  "keywords": [
+    "discord",
+    "discordBot",
+    "seyfert"
+  ],
+  "author": "Oscar-Dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oscar-Dev0/seyfert-Bot-Base-Modular-Discord/issues"
+  },
+  "homepage": "https://github.com/Oscar-Dev0/seyfert-Bot-Base-Modular-Discord#readme",
+  "dependencies": {
+    "ioredis": "^5.4.1",
+    "kleur": "^4.1.5",
+    "seyfert": "^2.1.0",
+    "winston": "^3.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "dotenv": "latest",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10",
+    "yarn": ">=1.22.22"
+  }
+}
