@@ -4,8 +4,29 @@ import redis from './utils/lib/redis';
 import { RedisAdapter } from './utils/lib/RedisAdapter';
 import { GetEnv } from './utils/function/env';
 import { disabledCache } from './utils/lib/config';
+import { PresenceUpdateStatus } from 'seyfert/lib/types';
 
-const client = new Client();
+const client = new Client({
+
+    presence() {
+        return {
+            since: 0,
+            afk: true,
+            "status": PresenceUpdateStatus.DoNotDisturb,
+            activities: [
+                {
+                    "name": "with your heart",
+                    "type": 3
+                }
+            ]
+        }
+    },
+    commands: {
+        prefix(message) {
+            return ['!', '?', '.']
+        },
+    }
+});
 
 
 client.setServices(

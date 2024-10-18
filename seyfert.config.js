@@ -7,7 +7,8 @@ if (!token) throw new Error("No token found in .env file");
 
 module.exports = config.bot({
    token,
-   intents: ["Guilds"],
+   intents: ["Guilds", "MessageContent", "GuildMembers", "GuildPresences"],
+   "debug": true,
    locations: {
        base: "src",
        output: "dist", 
